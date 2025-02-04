@@ -6,7 +6,6 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-
 @font-face {
     font-family: "HankenGrotesk";
     src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
@@ -55,8 +54,6 @@ li {
 
 }
 
-
-
 .category {
     display: flex;
     align-items: center;
@@ -102,4 +99,23 @@ li {
 
 .visual-color {
     color: hsl(234, 85%, 45%);
+}
+
+button {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(221, 100%, 96%);
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    background-color: hsl(224, 30%, 27%);
+    padding: 16px;
+    margin-top: 42px;
+    cursor: pointer;
+}
+
+button:active {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
 }
