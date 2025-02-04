@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<link>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css"></link>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,32 +19,64 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="content-container">
+    <section>
+    <h2>Your Result</h2>
+    <div>
+      76
+      of 100
+    </div>
+    <p>Great</p>
+    <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li class="reaction-background">
+          <span class="category reaction-color">
+            <img src="./assets/images/icon-reaction.svg" width="20" height="20" alt="icon">
+            Reaction
+          </span>
+          <span class="score">
+            80 <span>/ 100</span>
+          </span>
+        </li>
+        <li class="memory-background">
+          <span class="category memory-color">
+            <img src="./assets/images/icon-memory.svg" width="20" height="20" alt="icon">
+            Memory
+          </span>
+          <span class="score">
+            92 <span>/ 100</span>
+          </span>
+        </li>
+        <li class="verbal-background">
+          <span class="category verbal-color">
+            <img src="./assets/images/icon-verbal.svg" width="20" height="20" alt="icon">
+            Verbal
+          </span>
+            <span class="score">
+            61 <span>/ 100</span>
+          </span>
+        </li>
+        <li class="visual-background">
+          <span class="category visual-color">
+            <img src="./assets/images/icon-visual.svg" width="20" height="20" alt="icon">
+            Visual
+          </span>
+          <span class="score">
+            72 <span>/ 100</span>
+          </span>
+        </li>
+      </ul>
+      <button>Continue</button>
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Diogo Pereira</a>.
   </div>
 </body>
 </html>
