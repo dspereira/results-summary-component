@@ -3,11 +3,8 @@
 <link>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
-
   <link rel="stylesheet" type="text/css" href="styles.css"></link>
 
 
@@ -20,17 +17,17 @@
 <body>
 
   <div class="content-container">
-    <section>
-    <h2>Your Result</h2>
-    <div>
-      76
-      of 100
-    </div>
-    <p>Great</p>
-    <p>You scored higher than 65% of the people who have taken these tests.</p>
+    <section class="average-score-section">
+      <h2>Your Result</h2>
+      <div class="average-score-circle">
+          <div>76</div>
+          <div>of 100</div>
+      </div>
+      <p class="great">Great</p>
+      <p class="info">You scored higher than 65% of the people who have taken these tests.</p>
     </section>
-
-    <section>
+    
+    <section class="all-scores-section">
       <h2>Summary</h2>
       <ul>
         <li class="reaction-background">
@@ -78,5 +75,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Diogo Pereira</a>.
   </div>
+
 </body>
 </html>
