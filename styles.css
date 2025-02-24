@@ -6,6 +6,11 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/********************************/
+/* GENERAL REUSABLE STYLES */
+/********************************/
+
+
 @font-face {
 	font-family: "HankenGrotesk";
 	src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
@@ -49,8 +54,13 @@ html {
 
 .section-container {
 	max-width: 36.8rem;
-	/*height: 512px;*/
 }
+
+.heading {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
 
 
 /***********************/
@@ -61,13 +71,10 @@ html {
 	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 	border-radius: 32px;
 	text-align: center;
-	padding: 3.8rem 5.4rem 4.6rem 5.4rem;
 	padding: 4.6rem 5.4rem;
 }
 
 .average-score-heading {
-	font-size: 2.4rem;
-	font-weight: 700;
 	color: hsl(241, 100%, 89%);
 	margin-bottom: 3.5rem;
 }
@@ -112,10 +119,114 @@ html {
 }
 
 
+/***********************/
+/* ALL SCORES */
+/***********************/
+
+.scores-section {
+	padding: 4.6rem 4rem;
+}
+
+.scores-section-heading {
+	color: hsl(224, 30%, 27%);
+	margin-bottom: 2.8rem;
+}
+
+.scores-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.scores-list li {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1.6rem;
+	border-radius: 1.2rem;
+	padding: 1.7rem 1.6rem;
+}
+
+.score {
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+
+.score {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: hsl(224, 30%, 27%);
+}
+
+.score span{
+	display: inline-block;
+	color: hsl(224, 30%, 27%, 0.5);
+	margin-left: 0.8rem;
+}
+
+.reaction-background {
+	background-color: hsl(0, 100%, 67%, 0.05);
+}
+
+.reaction-color {
+	color: hsl(0, 100%, 67%);
+}
+
+.memory-background {
+	background-color: hsla(39, 100%, 56%, 0.06);
+}
+
+.memory-color {
+	color: hsl(39, 100%, 56%);
+}
+
+.verbal-background {
+	background-color: hsla(166, 100%, 37%, 0.06);
+
+}
+
+.verbal-color {
+	color: hsl(166, 100%, 37%);
+}
+
+.visual-background {
+	background-color: hsla(234, 85%, 45%, 0.06);
+}
+
+.visual-color {
+	color: hsl(234, 85%, 45%);
+}
 
 
-/* ALL SCORES*/
 
+
+/* .score-decription, .score, .icon {
+	display: block;
+} */
+
+/*
+.scores-list li {
+	padding: 16px;
+	width: 100%;
+	border-radius: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+*/
+/*
+.score-category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/
+
+
+
+/*
 .all-scores-section {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 0 32px 32px 0;
@@ -210,5 +321,5 @@ button:active {
 	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 	color: hsl(0, 0%, 100%);
 }
-
+*/
 
