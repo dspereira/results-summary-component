@@ -24,9 +24,16 @@ FONT SIZE SYSTEM (px)
 
 body {
 	font-family: "HankenGrotesk", sans-serif;
-	background-color: #f1f3f5;
+	background-color: #dee2e6;
 	font-size: 1.8rem;
 	font-weight: 500;
+
+	/* Just to center the content on a browser */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; 	
 }
 
 
@@ -35,51 +42,40 @@ html {
 }
 
 
-.content-container {
-
-
-    /* background-color: red; */
-	/*display: flex;
-    justify-content: flex-start;*/
-
-
-	/* justify-content: center; */
-
-    
-	/* top: 50%; */
-
-	/*margin-top: 25%;*/
-	/* transform: translateY(50%); */
-}
-
-.section-container {
-	max-width: 36.8rem;
-}
-
 .heading {
 	font-size: 2.4rem;
 	font-weight: 700;
 }
 
 
+/***********************/
+/* CONTENT CONTAINER */
+/***********************/
+.content-container {
+	display: flex;
+}
+
 
 /***********************/
 /* AVAREGE SCORE */
 /***********************/
 
-.average-score-container {
+.result-container {
+	width: 100%;
+	max-width: 36.8rem;
 	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-	border-radius: 32px;
+	border-radius: 3.2rem;
 	text-align: center;
 	padding: 4.6rem 5.4rem;
+	transform: translate(2.8rem);
 }
 
-.average-score-heading {
+.result-heading {
 	color: hsl(241, 100%, 89%);
 	margin-bottom: 3.5rem;
 }
 
-.average-score-circle {
+.result-circle {
 	background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 	display: flex;
 	flex-direction: column;
@@ -92,27 +88,27 @@ html {
 	margin-bottom: 2.8rem;
 }
 
-.average-score-circle span:first-child {
+.result-circle span:first-child {
 	font-size: 7.2rem;
 	font-weight: 800;
 	line-height: 7.2rem;
 	color: hsl(0, 0%, 100%);
 }
 
-.average-score-circle span:last-child {
+.result-circle span:last-child {
 	font-size: 1.8rem;
 	font-weight: 700;
 	color: hsl(241, 100%, 89%);
 }
 
-.average-score-feedback {
+.result-feedback {
 	font-size: 3.2rem;
 	font-weight: 700;
 	color: hsl(0, 0%, 100%);
 	margin-bottom: 1.4rem;
 }
 
-.average-score-description {
+.result-description {
 	font-size: 1.8rem;
 	font-weight: 500;
 	color: hsl(241, 100%, 89%)
@@ -120,26 +116,30 @@ html {
 
 
 /***********************/
-/* ALL SCORES */
+/* SUMMARY SECTION */
 /***********************/
 
-.scores-section {
-	padding: 4.6rem 4rem;
+.summary-section {
+	width: 100%;
+	max-width: 39.6rem; /*368(original) + 28(ovrerlap)*/
+	background-color: #FFF;
+	border-radius: 0 3.2rem 3.2rem 0;
+	padding: 4.6rem 4rem 4.6rem 6.8rem; /*4rem(original) + 2.8rem(overlap)*/
 }
 
-.scores-section-heading {
+.summary-section-heading {
 	color: hsl(224, 30%, 27%);
 	margin-bottom: 2.8rem;
 }
 
-.scores-list {
+.summary-list {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
 }
 
-.scores-list li {
+.summary-list li {
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -200,126 +200,23 @@ html {
 }
 
 
-
-
-/* .score-decription, .score, .icon {
-	display: block;
-} */
-
-/*
-.scores-list li {
-	padding: 16px;
-	width: 100%;
-	border-radius: 9px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-*/
-/*
-.score-category {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-*/
-
-
-
-/*
-.all-scores-section {
-	background-color: hsl(0, 0%, 100%);
-	border-radius: 0 32px 32px 0;
-}
-
-.all-scores-section h2 {
-	margin-bottom: 24px;
-	font-size: 24px;
-	font-weight: 700;
-	color: hsl(224, 30%, 27%);
-}
-
-ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-li {
-	padding: 16px;
-	width: 100%;
-	border-radius: 9px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-}
-
-.category {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-}
-
-.score {
-	font-weight: 700;
-	color: hsl(224, 30%, 27%);
-}
-
-.score span{
-	color: hsla(224, 30%, 27%, 0.5);
-}
-
-.reaction-background {
-	background-color: hsl(0, 100%, 67%, 0.06);
-}
-
-.reaction-color {
-	color: hsl(0, 100%, 67%);
-}
-
-.memory-background {
-	background-color: hsla(39, 100%, 56%, 0.06);
-}
-
-.memory-color {
-	color: hsl(39, 100%, 56%);
-}
-
-.verbal-background {
-	background-color: hsla(166, 100%, 37%, 0.06);
-}
-
-.verbal-color {
-	color: hsl(166, 100%, 37%);
-}
-
-.visual-background {
-	background-color: hsla(234, 85%, 45%, 0.06);
-}
-
-.visual-color {
-	color: hsl(234, 85%, 45%);
-}
-
 button {
 	display: block;
-	font-size: 18px;
-	font-weight: 700;
-	color: hsl(221, 100%, 96%);
-	width: 100%;
-	border: none;
-	border-radius: 100px;
-	background-color: hsl(224, 30%, 27%);
-	padding: 16px;
-	margin-top: 32px;
 	cursor: pointer;
+	width: 100%;
+	font-size: 1.8rem;
+	font-weight: 700;
+	background-color: hsl(224, 30%, 27%);
+	color: hsl(221, 100%, 96%);
+	border: none;
+	border-radius: 10rem;
+	padding: 1.7rem;
+	margin-top: 4.1rem;
 }
 
-button:active {
+button:hover {
 	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 	color: hsl(0, 0%, 100%);
 }
-*/
+
 
