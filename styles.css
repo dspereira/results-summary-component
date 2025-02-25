@@ -1,15 +1,35 @@
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
 /********************************/
 /* GENERAL REUSABLE STYLES */
 /********************************/
 
+:root {
+	--light-red: hsl(0, 100%, 67%);
+	--orangey-yellow: hsl(39, 100%, 56%);
+	--green-teal: hsl(166, 100%, 37%);
+	--cobalt-blue: hsl(234, 85%, 45%);
+
+	--light-red-transparent: hsla(0, 100%, 67%, 0.06);
+	--orangey-yellow-transparent: hsla(39, 100%, 56%, 0.06);
+	--green-teal-transparent: hsla(166, 100%, 37%, 0.06);
+	--cobalt-blue-transparent: hsla(234, 85%, 45%, 0.06);
+
+	--white: hsl(0, 0%, 100%);
+	--pale-blue: hsl(221, 100%, 96%);
+	--light-lavender: hsl(241, 100%, 89%);
+	--dark-gray-blue: hsl(224, 30%, 27%);
+	--dark-gray-blue-50: hsla(224, 30%, 27%, 0.5);
+
+
+	/* Background Gradient */
+	--light-slate-blue: hsl(252, 100%, 67%);
+	--light-royal-blue: hsl(241, 81%, 54%);
+
+	/* Circle Gradient */
+	--violet-blue: hsla(256, 72%, 46%, 1);
+	--persian-blue: hsla(241, 72%, 46%, 0);
+
+	--medium-gray-blue: hsl(228, 45%, 44%);
+}
 
 @font-face {
 	font-family: "HankenGrotesk";
@@ -62,7 +82,7 @@ html {
 .result-section {
 	width: 100%;
 	max-width: 36.8rem;
-	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 	border-radius: 3.2rem;
 	text-align: center;
 	padding: 4.6rem 5.4rem;
@@ -71,12 +91,12 @@ html {
 }
 
 .result-heading {
-	color: hsl(241, 100%, 89%);
+	color: var(--light-lavender);
 	margin-bottom: 3.5rem;
 }
 
 .result-circle {
-	background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+	background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -92,26 +112,26 @@ html {
 	font-size: 7.2rem;
 	font-weight: 800;
 	line-height: 7.2rem;
-	color: hsl(0, 0%, 100%);
+	color: var(--white);
 }
 
 .result-circle span:last-child {
 	/* font-size: 1.8rem; */
 	font-weight: 700;
-	color: hsl(241, 100%, 89%);
+	color: var(--light-lavender);
 }
 
 .result-feedback {
 	font-size: 3.2rem;
 	font-weight: 700;
-	color: hsl(0, 0%, 100%);
+	color: var(--white);
 	margin-bottom: 1.4rem;
 }
 
 .result-description {
 	/* font-size: 1.8rem; */
 	font-weight: 500;
-	color: hsl(241, 100%, 89%)
+	color: var(--light-lavender);
 }
 
 
@@ -122,13 +142,13 @@ html {
 .summary-section {
 	width: 100%;
 	max-width: 39.6rem; /*368(original) + 28(ovrerlap)*/
-	background-color: #FFF;
+	background-color: var(--white);
 	border-radius: 0 3.2rem 3.2rem 0;
 	padding: 4.6rem 4rem 4.6rem 6.8rem; /*4rem(original) + 2.8rem(overlap)*/
 }
 
 .summary-section-heading {
-	color: hsl(224, 30%, 27%);
+	color: var(--dark-gray-blue);
 	margin-bottom: 2.8rem;
 }
 
@@ -157,46 +177,46 @@ html {
 .score {
 	/*font-size: 1.8rem;*/
 	font-weight: 700;
-	color: hsl(224, 30%, 27%);
+	color: var(--dark-gray-blue);
 }
 
 .score span{
 	display: inline-block;
-	color: hsl(224, 30%, 27%, 0.5);
+	color: var(--dark-gray-blue-50);
 	margin-left: 0.8rem;
 }
 
 .reaction-background {
-	background-color: hsl(0, 100%, 67%, 0.05);
+	background-color: var(--light-red-transparent);
 }
 
 .reaction-color {
-	color: hsl(0, 100%, 67%);
+	color: var(--light-red);
 }
 
 .memory-background {
-	background-color: hsla(39, 100%, 56%, 0.06);
+	background-color: var(--orangey-yellow-transparent);
 }
 
 .memory-color {
-	color: hsl(39, 100%, 56%);
+	color: var(--orangey-yellow);
 }
 
 .verbal-background {
-	background-color: hsla(166, 100%, 37%, 0.06);
+	background-color: var(--green-teal-transparent);
 
 }
 
 .verbal-color {
-	color: hsl(166, 100%, 37%);
+	color: var(--green-teal);
 }
 
 .visual-background {
-	background-color: hsla(234, 85%, 45%, 0.06);
+	background-color: var(--cobalt-blue-transparent);
 }
 
 .visual-color {
-	color: hsl(234, 85%, 45%);
+	color: var(--cobalt-blue);
 }
 
 
@@ -206,8 +226,8 @@ button {
 	width: 100%;
 	font-size: 1.8rem;
 	font-weight: 700;
-	background-color: hsl(224, 30%, 27%);
-	color: hsl(221, 100%, 96%);
+	background-color: var(--dark-gray-blue);
+	color: var(--pale-blue);
 	border: none;
 	border-radius: 10rem;
 	padding: 1.7rem;
@@ -275,15 +295,15 @@ button {
 	}
 
 	button:active {
-		background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-		color: hsl(0, 0%, 100%);
+		background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+		color: var(--white);
 	}
 }
 
 @media (hover:hover) {
 	button:hover {
-		background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-		color: hsl(0, 0%, 100%);
+		background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+		color: var(--white);
 	}
 }
 
@@ -297,5 +317,5 @@ button {
 	margin-top: 6.4rem;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--medium-gray-blue);
 }
