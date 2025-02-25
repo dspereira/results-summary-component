@@ -214,11 +214,6 @@ button {
 	margin-top: 4.1rem;
 }
 
-button:hover {
-	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-	color: hsl(0, 0%, 100%);
-}
-
 /***********************/
 /* RESPONSIVE */
 /***********************/
@@ -279,6 +274,17 @@ button:hover {
 		padding: 1.6rem;
 	}
 
+	button:active {
+		background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+		color: hsl(0, 0%, 100%);
+	}
+}
+
+@media (hover:hover) {
+	button:hover {
+		background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+		color: hsl(0, 0%, 100%);
+	}
 }
 
 /***********************/
