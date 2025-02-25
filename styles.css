@@ -36,7 +36,6 @@ body {
 	height: 100vh;
 }
 
-
 html {
     font-size: 62.5%;
 }
@@ -60,7 +59,7 @@ html {
 /* AVAREGE SCORE */
 /***********************/
 
-.result-container {
+.result-section {
 	width: 100%;
 	max-width: 36.8rem;
 	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -97,7 +96,7 @@ html {
 }
 
 .result-circle span:last-child {
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	font-weight: 700;
 	color: hsl(241, 100%, 89%);
 }
@@ -110,7 +109,7 @@ html {
 }
 
 .result-description {
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	font-weight: 500;
 	color: hsl(241, 100%, 89%)
 }
@@ -156,7 +155,7 @@ html {
 }
 
 .score {
-	font-size: 1.8rem;
+	/*font-size: 1.8rem;*/
 	font-weight: 700;
 	color: hsl(224, 30%, 27%);
 }
@@ -220,6 +219,67 @@ button:hover {
 	color: hsl(0, 0%, 100%);
 }
 
+/***********************/
+/* RESPONSIVE */
+/***********************/
+@media (max-width: 660px) {
+	body {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+	}
+
+	.heading {
+		font-size: 1.8rem;
+	}
+
+	.content-container {
+		flex-direction: column;
+	}
+
+	/* RESULT */
+	.result-section {
+		max-width: 100%;
+		margin: 0;
+		margin-bottom: -2.8rem;
+		border-radius: 0 0 3.2rem 3.2rem;
+		padding: 2.4rem 5.8rem 4rem 5.8rem;
+	}
+
+	.result-circle {
+		max-width: 14rem;
+		margin-bottom: 2.4rem;
+	}
+
+	.result-circle span:first-child {
+		font-size: 5.6rem;
+	}
+
+	.result-feedback {
+		font-size: 2.4rem;
+		margin-bottom: 0.8rem;
+	}
+
+	/* SUMMARY */
+	.summary-section {
+		max-width: 100%;
+		border-radius: 0;
+		margin: 0;
+		padding: 4.8rem 3rem 3rem 3rem; /*2.4 + 2.4 = 4.8rem bacuse of overlap */
+	}
+
+	.summary-section-heading {
+		margin-bottom: 2.4rem;
+	}
+
+	button {
+		margin-top: 2.4rem;
+		padding: 1.6rem;
+	}
+
+}
 
 /***********************/
 /* ATTRIBUTION */
