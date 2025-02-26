@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/results-summary-component---responsive-flexbox-layout-vIbQoEFryG](https://www.frontendmentor.io/solutions/results-summary-component---responsive-flexbox-layout-vIbQoEFryG)
 - Live Site URL: [https://dspereira.github.io/results-summary-component/](https://dspereira.github.io/results-summary-component/)
 
 ## My process
