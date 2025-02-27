@@ -321,7 +321,6 @@ button {
 	font-size: 1.1rem; 
 	text-align: center; 
 	margin-top: 6.4rem;
-	display: none;
 }
 .attribution a {
 	color: var(--medium-gray-blue);
