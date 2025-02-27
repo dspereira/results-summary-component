@@ -19,7 +19,6 @@
 	--dark-gray-blue: hsl(224, 30%, 27%);
 	--dark-gray-blue-50: hsla(224, 30%, 27%, 0.5);
 
-
 	/* Background Gradient */
 	--light-slate-blue: hsl(252, 100%, 67%);
 	--light-royal-blue: hsl(241, 81%, 54%);
@@ -29,6 +28,10 @@
 	--persian-blue: hsla(241, 72%, 46%, 0);
 
 	--medium-gray-blue: hsl(228, 45%, 44%);
+
+	--very-ligth-blue: hsl(200, 100%, 96%);
+
+
 }
 
 @font-face {
@@ -44,7 +47,7 @@
 
 body {
 	font-family: "HankenGrotesk", sans-serif;
-	background-color: #dee2e6;
+	background-color: var(--very-ligth-blue);
 	font-size: 1.8rem;
 	font-weight: 500;
 
